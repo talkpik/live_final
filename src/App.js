@@ -2,7 +2,7 @@
 import Footer from './components/Footer';
 import NavMenuBar from './components/NavMenuBar';
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, BrowserRouter, Route, Switch } from 'react-router-dom';
  
 
 import Error from './components/Error';
@@ -17,7 +17,7 @@ import Contact from './components/Contact';
 class App extends Component {
   render() {
     return (      
-       <BrowserRouter>
+       <HashRouter>
         <div>
           <NavMenuBar />
             <Switch>
@@ -32,7 +32,7 @@ class App extends Component {
            </Switch>
            <Footer />
         </div> 
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
