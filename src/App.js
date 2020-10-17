@@ -22,9 +22,7 @@ class App extends Component {
           <NavMenuBar />
             <Switch>
              <Route path="/" component={Header} exact/>
-             <Route path="/services" component={Services}>
-                <Redirect to='/services'/>
-              </Route>
+             <Route path="/services" component={Services}/>
              <Route path="/seeker" component={Seeker}/>
              <Route path="/speaker" component={Speaker}/>
              <Route path="/events" component={Events}/>
