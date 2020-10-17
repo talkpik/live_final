@@ -14,8 +14,9 @@ import Events from './components/Events';
 import Team from './components/Team';
 import Contact from './components/Contact';
 
+
 class App extends Component {
-  render() {
+  render(){
     return (      
        <HashRouter>
         <div>
@@ -28,7 +29,8 @@ class App extends Component {
              <Route path="/events" component={Events}/>
              <Route path="/team" component={Team}/>
              <Route path="/contact" component={Contact}/>
-            <Route component={Error}/>
+             <Redirect to="/" />
+            
            </Switch>
            <Footer />
         </div> 
