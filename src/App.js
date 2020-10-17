@@ -17,7 +17,7 @@ import Contact from './components/Contact';
 class App extends Component {
   render() {
     return (      
-       <HashRouter basename="/" hashType="slash">
+       <HashRouter>
         <div>
           <NavMenuBar />
             <Switch>
