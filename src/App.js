@@ -3,7 +3,6 @@ import Footer from './components/Footer';
 import NavMenuBar from './components/NavMenuBar';
 import React, { Component } from 'react';
 import { HashRouter, BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
- 
 
 import Error from './components/Error';
 import Header from './components/Header';
@@ -22,8 +21,9 @@ class App extends Component {
         <div>
           <NavMenuBar />
             <Switch>
+            
              <Route path="/" component={Header} exact/>
-             <Route path="/services" component={Services}/>
+             <Route path="talkpik.com/services" component={Services}/>
              <Route path="/seeker" component={Seeker}/>
              <Route path="/speaker" component={Speaker}/>
              <Route path="/events" component={Events}/>
