@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import Typical from 'react-typical';
+import Dialog from './Dialog';
 
 class Header extends Component {
+    state={isOpen:false}
 render(){
   return (
     <header id="header" className="header">
@@ -15,9 +17,9 @@ render(){
 	  								loop={Infinity}
         							wrapper="b"	
 	  								steps={[
-	  									'an institution?',1500,
-	  									'a profession?',1500,
-	  									'an industry?',1500
+	  									'an institution?',2000,
+	  									'a profession?',2000,
+	  									'an industry?',2000
 	  								]}
 	  							/></h1>
 	  						<br></br>
@@ -28,6 +30,10 @@ render(){
 	  						<br></br>
 	  						<p></p>
 	                    </div> 
+                        <button className="btn-solid-reg spacing" onClick={(e) => this.setState({isOpen:true})} >FOR FUTURE EVENTS, SIGN UP</button>
+	  				<Dialog isOpen={this.state.isOpen} onClose={(e) => this.setState({isOpen:false})}>
+	  					<iframe title="contactform" src="https://formfaca.de/sm/amL5VB_O8" width="640" height="600" frameborder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
+	  				</Dialog>
                     </div> 
 	  				<div className="col-lg-6">
                         <div className="image-container">

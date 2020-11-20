@@ -26,15 +26,8 @@ render(){
                 
 	  
 	  			<div className="col-lg-6">
-	  				<button className="btn-solid-reg popup-with-move-anim" onClick={(e) => this.setState({isOpen:true})} >CONTACT US</button>
-	  				<Dialog isOpen={this.state.isOpen} onClose={(e) => this.setState({isOpen:false})}>
-	  					<iframe title="contactform" src="https://formfaca.de/sm/IkBKWBJTZ" width="640" height="600" frameborder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
-	  				</Dialog>
-					<br></br>
-					<button className="btn-solid-reg popup-with-move-anim" onClick={(e) => this.setState({isOpen:true})} >FOR FUTURE EVENTS, SIGN UP</button>
-	  				<Dialog isOpen={this.state.isOpen} onClose={(e) => this.setState({isOpen:false})}>
-	  					<iframe title="contactform" src="https://formfaca.de/sm/amL5VB_O8" width="640" height="600" frameborder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
-	  				</Dialog>
+                  <div class="container" id="ff-compose"></div>
+                  <iframe title="contactform" src="https://formfaca.de/sm/IkBKWBJTZ" width="600" height="600" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
 	  			</div> 
 
 				
